@@ -1,0 +1,55 @@
+@layout('layout')
+
+@section('content')
+<div class="columns">
+  <div class="column">
+   @include('components.sideNav')
+  </div>
+  <div class="column">
+     <div class="card">
+  <div class="card-content">
+
+<form method="POST" action="">
+
+<div class="field">
+  <label class="label">Name</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Name"  name="name" value="">
+
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Email</label>
+  <div class="control">
+    <input class="input" type="email" placeholder="Email" value="" name="email">
+   
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Password</label>
+  <div class="control">
+    <input class="input" type="password" placeholder="Password" name="password">
+
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link" type="submit">Update</button>
+  </div>
+
+</div>
+
+</form>
+
+  </div>
+</div>
+  </div>
+
+</div>
+
+
+
+@endsection

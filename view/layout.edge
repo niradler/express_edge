@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
+
+</head>
+
+<body>
+  <header>
+@include('components.nav')
+  </header>
+
+@include('components.topScore')
+
+
+   <section class="section">
+    <div class="container max-width-container">
+     @section('content')
+      <div class="card">
+  <div class="card-content">
+
+    <p class="title">
+    404 NOT FOUND! :(
+    </p>
+    <p class="subtitle">
+     Back to home <a href="/">Click here!</a>
+    </p>
+  </div>
+</div>
+  @endsection
+    </div>
+  </section>
+ <footer class="">
+</footer>
+</body>
+
+</html>
